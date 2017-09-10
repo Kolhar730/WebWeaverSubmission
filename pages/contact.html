@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-yellow.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/locations.css" />
+
+    <style type="text/css">
+    .form {
+      display: flex;
+      margin-top: 40px;
+      align-self: center;
+      margin-bottom: 40px;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .form_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 500px;
+      grid-column: 1;
+    }
+
+    .mdl-card__title-text {
+      font-size: 46px;
+      text-shadow: 2px 2px 2px #000;
+    }
+      
+      .demo-card-wide.mdl-card {
+        width: 1024px;
+        height: 800px;
+      }
+      .demo-card-wide > .mdl-card__title {
+        color: #fff;
+        height: 400px;
+        background: url('../img/paris/intro.jpg') center / cover;
+      }
+      .demo-card-wide > .mdl-card__menu {
+        color: #fff;
+      }
+
+      .mdl-textfield__label {
+        color: #000;
+      }
+      .container {
+        display: grid;
+      }
+      .video {
+        grid-column: 2;
+      }
+      .inside-text {
+        font-size: 15px;
+        color: #000;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+    </style>
+</head>
+
+<body>
+    
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Contact Form</span>
+                    <div class="mdl-layout-spacer"></div>
+                    <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                    mdl-textfield--floating-label mdl-textfield--align-right">
+                        <label class="mdl-button mdl-js-button mdl-button--icon" for="waterfall-exp">
+                        <i class="material-icons" id="searchIt">search</i>
+                        </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" name="sample"
+                   id="waterfall-exp">
+          </div>
+        </div>
+                        <label class="mdl-button mdl-js-button mdl-button--icon" id="shareIt">
+                            <i class="material-icons">share</i>
+                        </label>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">
+                <a href="https://www.google.com/culturalinstitute/beta/" alt="Google Arts &amp; Culture">
+                    <img class="logo" src="../img/logo.png" title="Google Arts &amp; Culture - Project Logo"></img></a>
+                <br>The Art Bloc
+            </span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link drawer" href="../index.html">
+                <div class="icon material-icons" style="margin-right: 4%;">home</div>Home</a>
+              <a class="mdl-navigation__link drawer" href="#">
+                <div class="icon material-icons" style="margin-right: 4%;">location_on</div>Locations</a>
+              <a class="mdl-navigation__link drawer" href="page2.html">
+                <div class="icon material-icons" style="margin-right: 4%;">people</div>Artists</a>
+              <a class="mdl-navigation__link drawer" href="page3.html">
+                <div class="icon material-icons" style="margin-right: 4%;">local_activity</div>Experience</a>
+              <a class="mdl-navigation__link drawer" href="contact.html">
+                <div class="icon material-icons" style="margin-right: 4%;">question_answer</div>Contact Us</a>
+            </nav>
+        </div>
+    <main class="mdl-layout__content">
+      <section class="form">      
+     <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title">
+      <h2 class="mdl-card__title-text">Submit your Queries</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <div class="container">
+         <form action="#" class="form_text">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name">
+                                <label class="mdl-textfield__label" for="Name">Name...</label>
+                                <span class="mdl-textfield__error">Letters and spaces only</span>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="Email">
+                                <label class="mdl-textfield__label" for="Email">Email...</label>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <textarea class="mdl-textfield__input" type="text" rows="5" id="note"></textarea>
+                                <label class="mdl-textfield__label" for="note">Enter Note...</label>
+                            </div>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="width: 150px; font-size: 20px">
+          Submit Form
+        </a>
+                        </form>
+                        <div class="video">
+                        <h6 class="inside-text">Videos Submitted by one of our members</h6>
+                        <iframe width="400px" height="300px" src="https://www.youtube.com/embed/Xf8zIpxn01g" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        </div>
+      </div>
+    </div>
+        </section>
+        <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">&copy; The Art Bloc</div>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Privacy &amp; Terms</a></li>
+                    </ul>
+                </div>
+            </footer>
+    </main>
+</div>
+
+    <span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--bottom" for="searchIt">Search Here</span>
+    <span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--bottom" for="shareIt">Share on Social Media</span>
+
+</body>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home - The Art Bloc</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Kanit:700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body>
+	<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+		<header class="mdl-layout__header mdl-layout__header--transparent">
+			<div class="mdl-layout__header-row">
+				<span class="mdl-layout-title">The Art Bloc</span>
+				<!-- Navigation -->
+			</div>
+		</header>
+			<div class="mdl-layout__drawer">
+				<span class="mdl-layout-title inside">
+					<a href="https://www.google.com/culturalinstitute/beta/" alt="Google Arts &amp; Culture">
+						<img class="logo" src="img/logo.png" title="Google Arts &amp; Culture - Project Logo"></img></a>
+					<br>The Art Bloc</span>
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link drawer" href="#">
+					<div class="icon material-icons" style="margin-right: 4%;">home</div>Home</a>
+				  <a class="mdl-navigation__link drawer" href="pages/page1.html">
+					<div class="icon material-icons" style="margin-right: 4%;">location_on</div>Locations</a>
+				  <a class="mdl-navigation__link drawer" href="pages/page2.html">
+					<div class="icon material-icons" style="margin-right: 4%;">people</div>Artists</a>
+				  <a class="mdl-navigation__link drawer" href="pages/page3.html">
+					<div class="icon material-icons" style="margin-right: 4%;" title="Street View from the Eiffel Tower">local_activity</div>Experience</a>
+				  <a class="mdl-navigation__link drawer" href="pages/contact.html">
+					<div class="icon material-icons" style="margin-right: 4%;">question_answer</div>Contact Us</a>
+				</nav>
+			</div>
+
+		<main class="mdl-layout__content">
+				<div class="grid grid--layout grid--current">
+					<div class="grid-item" id="t1"></div>
+					<div class="grid-item" id="t2"></div>
+					<div class="grid-item" id="t3"></div>
+					<div class="grid-item" id="t4"></div>
+					<div class="grid-item" id="t5"></div>
+					<div class="grid-item" id="t6"></div>
+					<div class="grid-item" id="t7"></div>
+					<div class="grid-item" id="t8"></div>
+					<div class="grid-item" id="t9"></div>
+					<div class="grid-item" id="t10"></div>
+					<div class="grid-item" id="t11"></div>
+					<div class="grid-item" id="t12"></div>
+					<div class="grid-item" id="t13"></div>
+					<h2 class="grid-item grid-item--name">The  <br/> Art <br/>Bloc</h2>
+					<div class="grid-item grid-item--title">
+							<h3 class="grid-item--title elem1">Paris</h3>
+							<!-- <h3 class="grid-item--title elem2">Sydney</h3>
+							<h3 class="grid-item--title elem3">Belfast</h3> -->
+					</div>
+					<p class="grid-item grid-item--text">Group of Youngsters reviving the memory of Artworks from across the globe.</p>
+				</div>
+		</main>
+
+		<!-- Start Tooltips -->
+		<div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large" for="t1">Walt Disney</div>
+		<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" style="font-size: 11px" for="t2">Girl with a Pearl Earring<br><i>Johannes Vermeer</i></div>
+		<div class="mdl-tooltip mdl-tooltip--large" for="t3">Starry Night<br><i>Vincent Van Gogh</i></div>
+		<div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large" for="t4">Cubism<br><i>Pablo Picasso</i></div>
+		<div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large" for="t5">Petra</div>
+		<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="t6">Mona Lisa<br><i>Leonardo da Vinci</i></div>
+		<div class="mdl-tooltip mdl-tooltip--large" for="t7">The Louvre<br>Paris</div>
+		<div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large" for="t8">Eiffel Tower</div>
+		<div class="mdl-tooltip mdl-tooltip--large" for="t9">Creation of Adam<br><i>Michaelangelo</i></div>
+		<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="t10">Lady with the Lamp<br><i>Ravi Varma</i></div>
+		<div class="mdl-tooltip mdl-tooltip--top mdl-tooltip--large" for="t11">Opera House<br></div>
+		<div class="mdl-tooltip mdl-tooltip--right mdl-tooltip--large" for="t12">Andy Warhol</div>
+		<div class="mdl-tooltip mdl-tooltip--right mdl-tooltip--large" for="t13">Salvador Dali</div>
+		<!-- End Tooltips -->
+	</div>
+	<!-- MDLite JS -->
+	<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+	<!-- All other scripts are present here -->
+	<script src = "js/index.js"> </script> 
+	
+</body>
+</html>

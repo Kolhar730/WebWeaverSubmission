@@ -1,0 +1,368 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+    color: white;
+}
+
+.mdl-layout-title {
+	text-transform: uppercase;
+	font-family: 'Kavit', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	letter-spacing: 3px;
+}
+
+.mdl-navigation__link {
+	letter-spacing: 3px;
+	font-weight: 700;
+	font-family: 'Roboto Slab', 'Kavit', 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	padding: 40px;
+	text-transform: uppercase;
+}
+
+.mdl-navigation__link:first-child {
+	border-top: 1px solid rgba(128, 128, 128, 0.68);
+}
+
+.mdl-navigation__link:hover:first-child {
+	color: #000;
+}
+
+.mdl-navigation__link:hover:nth-child(2) {
+	color: #000;
+}
+
+.mdl-navigation__link:hover:nth-child(3) {
+	color: #000;
+}
+
+.mdl-navigation__link:hover:nth-child(4) {
+	color: #000;
+}
+
+.mdl-navigation__link:hover:nth-child(5) {
+	color: #000;
+}
+
+.mdl-navigation__link:hover:nth-child(6) {
+	color: #000;
+}
+
+.mdl-navigation__link:hover:last-child {
+	color: #000;
+}
+
+.logo {
+	max-height: 120px;
+	margin-top: 4%;
+	margin-left: 12%;
+}
+
+.inside {
+    color: #000;
+}
+
+.demo-card-square.mdl-card {
+    width: 340px;
+    height: 340px;
+}
+
+.mdl-card__title {
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.2em;
+    background: #46B6AC;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.grid1 {
+    background: url(../img/person/vvg.png) center / cover;
+    background-repeat: no-repeat;
+}
+
+.grid2 {
+    background: url(../img/person/cm.jpg) center / cover;
+    background-repeat: no-repeat;
+}
+
+.grid3 {
+    background: url(../img/person/ldv.jpg) center / cover;
+    background-repeat: no-repeat;
+}
+
+.grid4 {
+    background: url(../img/person/pp.jpg) center / cover;
+    background-repeat: no-repeat;
+}
+
+.grid5 {
+    background: url(../img/person/aw.jpg) center / cover;
+    background-repeat: no-repeat;
+}
+
+.grid6 {
+    background: url(../img/person/asg.jpg) center / cover;
+    background-repeat: no-repeat;
+}
+
+.mdl-grid {
+    max-width: 1100px;
+    padding-right: 10px; 
+    padding-left: 10px;
+}
+
+.text-main {
+    text-transform: uppercase; 
+    font-family: 'Roboto Slab'; 
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.demo-ribbon {
+    width: 100%;
+    height: 40vh;
+    background-color: #3F51B5;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.demo-main {
+    margin-top: -35vh;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.demo-header .mdl-layout__header-row {
+    padding-left: 40px;
+}
+
+.demo-container {
+    max-width: 1600px;
+    width: calc(100% - 16px);
+    margin: 0 auto;
+}
+
+.demo-content {
+    border-radius: 2px;
+    padding: 80px 56px;
+    margin-bottom: 80px;
+}
+
+.demo-layout.is-small-screen .demo-content {
+    padding: 40px 28px;
+}
+
+.demo-content h3 {
+    margin-top: 48px;
+}
+
+#like-button {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    z-index: 900;
+}
+
+.article-ribbon {
+    width: 100%;
+    height: 60vh;
+    background: url("../img/person/vvg2.jpg") center / cover no-repeat #3F51B5; 
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.article-main {
+    margin-top: -35vh;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.article-header .mdl-layout__header-row {
+    padding-left: 40px;
+}
+
+.article-container {
+    max-width: 1600px;
+    width: calc(100% - 16px);
+    margin: 0 auto;
+}
+
+.article-content {
+    border-radius: 2px;
+    padding: 80px 56px;
+    margin-bottom: 80px;
+}
+
+#onPaint {
+    font-family: 'Source Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-right: 5px;
+    float: right;
+    text-align: right;
+    margin-top: 49vh;
+    color: #ffffff;
+}
+
+#main-text {
+    font-family: 'Roboto Slab', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#bday {
+    font-family: 'Roboto Slab', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+}
+
+.article-layout.is-small-screen .article-content {
+    padding: 40px 28px;
+}
+
+#like-button, #like-button-clicked {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    z-index: 900;
+}
+
+
+.inner-text {
+    text-justify: auto;
+    font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.mdl-dialog {
+    width: 440px;
+    height: 340px;
+}
+
+#inside-dialog {
+    width: 320px;
+    height: 320px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.quote h3 {
+    font-weight: 200;
+    font-family: 'Roboto Slab', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+@media screen and (max-width: 60em) {
+    body #spec {
+        margin-left: -200px;
+    }
+    #onPaint {
+        visibility: hidden;
+    }
+    #vg-pic {
+        margin-left: -20px;
+    }
+}
+
+.timeline {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0;
+    margin-top: -150px;
+    margin-bottom: -150px;
+    overflow: hidden;
+}
+
+#main-text:nth-child(2) {
+    margin-top: -30px;
+}
+
+.items {
+    height:300px;
+    padding: 10px;
+    padding-right: 17px;
+    width:100%;
+    border:1px solid white;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    position: relative;
+}
+
+.items.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+}
+
+.item {
+    width:300px;
+    height: calc(100% - 40px);
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: center;
+    box-shadow: 2px 2px 2px rgb(0,0,0, 0.3);
+}
+
+.item:nth-child(1) { 
+    background: url("../img/person/vvg/1.jpg") center / cover no-repeat;
+}
+
+.item:nth-child(2) { 
+    background: url("../img/person/vvg/2.jpg") center / cover no-repeat;
+}
+
+.item:nth-child(3) { 
+    background: url("../img/person/vvg/3.png") center / cover no-repeat;
+}
+
+.item:nth-child(4) { 
+    background: url("../img/person/vvg/4.jpg") center / cover no-repeat;
+}
+
+.item:nth-child(5) { 
+    background: url("../img/person/vvg/5.png") center / cover no-repeat;
+}
+
+.item:nth-child(6) { 
+    background: url("../img/person/vvg/6.png") center / cover no-repeat;
+}
+
+.item:nth-child(7) { 
+    background: url("../img/person/vvg/7.png") center / cover no-repeat;
+}
+
+.item:nth-child(8) { 
+    background: url("../img/person/vvg/8.png") center / cover no-repeat;
+}

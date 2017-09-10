@@ -1,0 +1,482 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Leonardo da Vinci</title>
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-red.min.css">
+</head>
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+    color: white;
+}
+
+.mdl-layout-title {
+	text-transform: uppercase;
+	font-family: 'Kavit', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	letter-spacing: 3px;
+}
+
+.mdl-navigation__link {
+	letter-spacing: 3px;
+	font-weight: 700;
+	font-family: 'Roboto Slab', 'Kavit', 'Trebuchet MS', Arial, Helvetica, sans-serif;
+	padding: 40px;
+	text-transform: uppercase;
+}
+
+.mdl-navigation__link:first-child {
+	border-top: 1px solid rgba(128, 128, 128, 0.68);
+}
+
+.mdl-navigation__link:hover:first-child {
+	color: #000;
+}
+
+.mdl-navigation__link:hover:nth-child(2) {
+	color: #000;
+}
+
+.mdl-navigation__link:hover:nth-child(3) {
+	color: #000;
+}
+
+.mdl-navigation__link:hover:nth-child(4) {
+	color: #000;
+}
+
+.mdl-navigation__link:hover:nth-child(5) {
+	color: #000;
+}
+
+.mdl-navigation__link:hover:nth-child(6) {
+	color: #000;
+}
+
+.mdl-navigation__link:hover:last-child {
+	color: #000;
+}
+
+.logo {
+	max-height: 120px;
+	margin-top: 4%;
+	margin-left: 12%;
+}
+
+.inside {
+    color: #000;
+}
+
+.demo-card-square.mdl-card {
+    width: 340px;
+    height: 340px;
+}
+
+.mdl-card__title {
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.2em;
+    background: #46B6AC;
+    text-shadow: 2px 2px 2px #000;
+}
+
+
+.text-main {
+    text-transform: uppercase; 
+    font-family: 'Roboto Slab'; 
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.demo-ribbon {
+    width: 100%;
+    height: 40vh;
+    background-color: #3F51B5;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.demo-main {
+    margin-top: -35vh;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.demo-header .mdl-layout__header-row {
+    padding-left: 40px;
+}
+
+.demo-container {
+    max-width: 1600px;
+    width: calc(100% - 16px);
+    margin: 0 auto;
+}
+
+.demo-content {
+    border-radius: 2px;
+    padding: 80px 56px;
+    margin-bottom: 80px;
+}
+
+.demo-layout.is-small-screen .demo-content {
+    padding: 40px 28px;
+}
+
+.demo-content h3 {
+    margin-top: 48px;
+}
+
+#like-button {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    z-index: 900;
+}
+
+.article-ribbon {
+    width: 100%;
+    height: 60vh;
+    background: url("../../img/person/ldv2.jpg") center / cover no-repeat #3F51B5; 
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.article-main {
+    margin-top: -35vh;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.article-header .mdl-layout__header-row {
+    padding-left: 40px;
+}
+
+.article-container {
+    max-width: 1600px;
+    width: calc(100% - 16px);
+    margin: 0 auto;
+}
+
+.article-content {
+    border-radius: 2px;
+    padding: 80px 56px;
+    margin-bottom: 80px;
+}
+
+#onPaint {
+    font-family: 'Source Sans', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-right: 5px;
+    float: right;
+    text-align: right;
+    margin-top: 49vh;
+    color: #ffffff;
+}
+
+#main-text {
+    font-family: 'Roboto Slab', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+    font-size: px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#bday {
+    font-family: 'Roboto Slab', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+}
+
+.article-layout.is-small-screen .article-content {
+    padding: 40px 28px;
+}
+
+#like-button, #like-button-clicked {
+    position: fixed;
+    display: block;
+    right: 0;
+    bottom: 0;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    z-index: 900;
+}
+
+
+.inner-text {
+    text-justify: auto;
+    font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.mdl-dialog {
+    width: 440px;
+    height: 340px;
+}
+
+#inside-dialog {
+    width: 320px;
+    height: 320px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin-left: 22%;
+    text-align: justify;
+}
+
+.quote h3 {
+    font-weight: 200;
+    font-family: 'Roboto Slab', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+@media screen and (max-width: 60em) {
+    body #spec {
+        margin-left: -200px;
+    }
+    #onPaint {
+        visibility: hidden;
+    }
+    #vg-pic {
+        margin-left: -20px;
+    }
+}
+
+.timeline {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 0;
+    margin-top: -150px;
+    margin-bottom: -150px;
+    overflow: hidden;
+}
+
+#main-text:nth-child(2) {
+    margin-top: -30px;
+}
+
+.items {
+    height:300px;
+    padding: 10px;
+    padding-right: 17px;
+    width:100%;
+    border:1px solid white;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    position: relative;
+}
+
+.items.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+}
+
+.item {
+    width:300px;
+    height: calc(100% - 40px);
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: center;
+    box-shadow: 2px 2px 2px rgb(0,0,0, 0.3);
+}
+
+.item:nth-child(1) { 
+    background: url("../../img/person/ldv/1.jpg") center / cover no-repeat;
+}
+
+.item:nth-child(2) { 
+    background: url("../../img/person/ldv/2.jpg") center / cover no-repeat;
+}
+
+.item:nth-child(3) { 
+    background: url("../../img/person/ldv/3.jpg") center / cover no-repeat;
+}
+
+.item:nth-child(4) { 
+    background: url("../../img/person/ldv/4.jpg") center / cover no-repeat;
+}
+
+.item:nth-child(5) { 
+    background: url("../../img/person/ldv/5.jpg") center / cover no-repeat;
+}
+
+.item:nth-child(6) { 
+    background: url("../../img/person/ldv/6.jpg") center / cover no-repeat;
+}
+
+.item:nth-child(7) { 
+    background: url("../../img/person/ldv/7.jpg") center / cover no-repeat;
+}
+
+.item:nth-child(8) { 
+    background: url("../../img/person/ldv/8.jpg") center / cover no-repeat;
+}
+
+</style>
+
+
+<body>
+  <div class="article-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+    <header class="article-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+      <div class="mdl-layout__header-row">
+        <a href="../page2.html" style="color: inherit" title="Back to where you came from"><label class="mdl-button mdl-js-button mdl-button--icon">
+          <i class="material-icons">keyboard_backspace</i>
+        </label></a>
+        <span class="mdl-layout-title" style="text-align: center;margin-left: 40%" id="spec">Leonardo da Vinci</span>
+      </div>
+    </header>
+    <div class="article-ribbon">
+      <p id="onPaint">The Last Supper<br>1494<br>Now in the Milan</p>
+    </div>
+    <main class="article-main mdl-layout__content">
+      <div class="article-container mdl-grid">
+        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+        <div class="article-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+          <img src="../../img/person/ldv.jpg" id="vg-pic" style="height: 200px; width: auto; display: block; margin: 0 auto" />
+          <h3 id="main-text" style="margin-top: 40px">Leonardo da Vinci</h3>
+          <h5 id="bday">Apr 15, 1452 - May 2, 1519</h5>
+          <p class="inner-text"> 
+                Leonardo di ser Piero da Vinci, more commonly Leonardo da Vinci, was an Italian polymath whose areas of interest included invention, painting, sculpting, architecture, science, music, mathematics, engineering, literature, anatomy, geology, astronomy, botany, writing, history, and cartography. 
+                He has been variously called the father of paleontology, ichnology, and architecture, and is widely considered one of the greatest painters of all time. Sometimes credited with the inventions of the parachute, helicopter and tank, his genius epitomized the Renaissance humanist ideal.
+                Many historians and scholars regard Leonardo as a great exemplar of the "Renaissance Man", an individual of "unquenchable curiosity" and "feverishly inventive imagination". According to art historian Helen Gardner, the scope and depth of his interests were without precedent in recorded history, "his mind and personality seem to us superhuman, while the man himself mysterious and remote".
+          </p>
+        </div>
+      </div>
+      
+      <h2 id="main-text">Some other works of da Vinci</h2>
+      <section class="timeline" id="pics">
+        <div class="items">
+          <div class="item item1" title="The Baptism of Christ" id="pic1"></div>
+          <div class="item item2" title="Madonna of the Carnation" id="pic2"></div>
+          <div class="item item3" title="Virgin of the Rocks" id="pic3"></div>
+          <div class="item item4" title="Lady with an Ermine" id="pic4"></div>
+          <div class="item item5" title="Mona Lisa" id="pic5"></div>
+          <div class="item item6" title="La Scapigliata" id="pic6"></div>
+          <div class="item item7" title="Saint John the Baptist" id="pic7"></div>
+          <div class="item item8" title="La belle ferronnière" id="pic8"></div>
+        </div>
+      </section>
+      
+      <section class="quote">
+        <h3>“As a well-spent day brings happy sleep, so a life well spent brings happy death.”</h3>
+        <h5>Leonardo da Vinci</h5>
+      </section>
+      
+      <footer class="mdl-mini-footer" style="margin-top: 40px;">
+        <div class="mdl-mini-footer__left-section">
+          <div class="mdl-logo">&copy; The Art Bloc</div>
+        </div>
+        <div class="mdl-mini-footer__right-section">
+          <ul class="mdl-mini-footer__link-list">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy &amp; Terms</a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" id="like-button">
+    <i class="material-icons" id="icon">favorite_border</i>
+  </button>
+  <span class="mdl-tooltip mdl-tooltip--top" for="like-button" id="tool">Loved this article?<br>Show us Some Love!</span>
+
+  <span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="pic1">The Baptism of Christ</span>
+  <span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="pic2">Madonna of the Carnation</span>
+  <span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="pic3">Virgin of the Rocks</span>
+  <span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="pic4">Lady with an Ermine</span>
+  <span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="pic5">Mona Lisa</span>
+  <span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="pic6">La Scapigliata</span>
+  <span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="pic7">Saint John the Baptist</span>
+  <span class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="pic8">La belle ferronnière</span>
+
+
+
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script>
+    let clicker = document.getElementById('like-button');
+    let icon = document.getElementById('icon');
+    let clicked = true;
+    let tooltip = document.getElementById('tool');
+    clicker.addEventListener('click', () => {
+      if (clicked) {
+        clicker.id = "like-button-clicked";
+        icon.innerHTML = `favorite`;
+        clicked = false;
+        tooltip.style.fontSize = "16px";
+        tooltip.innerHTML = "Thanks!";
+      } else {
+        clicker.id = "like-button";
+        icon.innerHTML = `favorite_border`;
+        clicked = true;
+        tooltip.style.fontSize = "22px";
+        tooltip.innerHTML = "😭";
+      }
+    });
+    
+    const slider = document.querySelector('.items');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+    
+    slider.addEventListener('mousedown', (e) => {
+      isDown = true;
+      slider.classList.add('active');
+      startX = e.pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+    
+    slider.addEventListener('mouseleave', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+    
+    slider.addEventListener('mouseup', () => {
+      isDown = false;
+      slider.classList.remove('active');
+    });
+    
+    slider.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - slider.offsetLeft;
+      const walk = (x - startX) * 3;
+      slider.scrollLeft = scrollLeft - walk;
+    });
+  </script>
+</body>
+</html>
